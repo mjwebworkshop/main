@@ -694,11 +694,20 @@ var aboutoffset = $("#aboutme").offset();
 var bodywidth = $(window).width()
 if(bodywidth<= 400){
  aboutoffset.top-=300
-    imagetwooffset.top-=200
+    imagetwooffset.top-=400
 
 }
 
-
+$("#home").click(function() {
+     $("#coolDiv").hide();
+    $('html, body').animate({
+        scrollTop: 10
+    }, 1000);
+    
+     $("#clickme").click();
+    $("#coolDiv").show();
+    return false;
+});
 
 
 $("#photogalary").click(function() {
