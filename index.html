@@ -1,6 +1,6 @@
 <html>
     
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
             
@@ -67,9 +67,29 @@
                                 
                                 
                                 
+                                <div id="aboutme">
+                                    <p id="paragraphone">Along our bodies we trace patterns with our fingers across the peaks and ridges made of skin and bone, creating maps from lines and scars, navigating the route from one heart to the next. We speak the language of lovers, with a rising kingdom of rolling hills and shallow valleys made of flesh and heart, breathe and tongue. Between the morning light and crescent moon we are the king and queen of an empire ruled underneath thick blankets and bed sheets.</p>
+                                    
+                                    <p id="paragraphtwo">
+                                    Ao longo de nossos corpos, rastreamos padrões com nossos dedos através dos picos e cumes feitos de pele e osso, criando mapas de linhas e cicatrizes, navegando a rota de um coração para o outro. Nós falamos o idioma dos amantes, com um reino crescente de colinas e vales rasos feitos de carne e coração, respira e língua. Entre a luz da manhã e a lua crescente, somos o rei e a rainha de um império governado sob cobertores grossos e lençóis.
+                                    </p>
+                                    
+                                </div>
+                                
+                                <div id="image">
+                                    <img src="http://images4.backpage.ca/imager/u/large/597815192/ca126ad3070a992835641271cc66cbe8.jpg" id="imagetwo" class="imgsec"/>
+                                    
+                                    
+                                    <img src="http://images4.backpage.ca/imager/u/large/597814087/0940f8626c1f65deed8422e621cfb756.jpg" id="imagethree" class="imgsec"/>
+                                    <img src="http://images4.backpage.ca/imager/u/large/597813572/a663e3e64700543ca4308499ed1b58e2.jpg" id="imagefour" class="imgsec"/>
+                                    <img src="http://images4.backpage.ca/imager/u/large/597812527/de5a71f521fe8e87e003577e6f9f9ea2.jpg" id="imagefive" class="imgsec"/>
+                                    
+                                    
+                                </div>
                                 
                                 
                                 <div id="contactme">
+                                    
                                     <h1>Contact Me</h1>
                                     <h4>Name</h4>
                                     <input placeholder="Joen Doe*">
@@ -116,19 +136,97 @@
                                 
                                 
                                 <div id="blackfotter">
-                                    <div class="ui fluid big icon input">
-                                    </div>
+                                    <div class="icon">
+                                        <a target="_blank" title="find us on Facebook" href="http://www.facebook.com/" class="facebook"><img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
+                                        <a target="_blank" title="follow me on twitter" href="http://www.twitter.com/PLACEHOLDER" class="twitter"><img alt="follow me on twitter" src="//login.create.net/images/icons/user/twitter_30x30.png" border=0></a>
+                                        
+                                        <a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER" class="instagram"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+                                    </div>  
+                                </div>
+                                
                                     
 </html>
 
 <style>
-    #blackfotter{
-        position: relative;
-        top:0px;
-        width:100%;
-        height:200px;
-        background-color: black;
+    
+    
+    .facebook{
+        position:relative;
+        left:400px;
+        top:100px;
     }
+.twitter{
+    position:relative;
+    left:400px;
+    top:100px;
+}
+
+.instagram{
+    position:relative;
+    left:400px;
+    top:100px;
+}
+
+.icon{
+    position:relative;
+    left:100px;
+}
+
+
+.instagram:hover, .facebook:hover, .twitter:hover{
+    
+    filter: brightness(0.5);
+}
+
+#image {
+    position: relative;
+    top:250px;
+    font-size: 0; /* remove space after inline element */
+}
+
+#image img.imgsec {
+    display: inline;
+    vertical-align: top; /* remove extra pixels under inline element */
+    width: 50%;
+    
+}
+#image img.imgsec:hover {
+    display: inline-block;
+    vertical-align: top; /* remove extra pixels under inline element */
+    width: 50%;
+    filter: brightness(0.5);
+    
+}
+
+
+#blackfotter{
+    position: relative;
+    top:0px;
+    width:100%;
+    height:200px;
+    background-color: black;
+}
+
+#aboutme{
+    position: relative;
+    top:190px;
+    left: 330px;
+}
+#paragraphone{
+    
+    width:800px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Arima Madurai', cursive;
+}
+
+#paragraphtwo{
+    
+    width:800px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Arima Madurai', cursive;
+}
 
 
 
@@ -184,7 +282,20 @@
         top:-10px;
     }
     
+    #image img.imgsec {
+        display: inline;
+        width:100%;
+    }
+    #image img.imgsec:hover {
+        
+        width: 100%;
+        
+    }
     
+    .icon{
+        left:-200px;
+        top:-40px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -352,7 +463,7 @@ html, body {
 input{
     background-color:#f2f2f2;;
     font-family: 'Arima Madurai', cursive;
-    width:250px;
+    width:350px;
 }
 
 h4{
@@ -371,7 +482,7 @@ h1{
 
 
 textarea{
-    width:300px;
+    width:400px;
     height: 150px;
     background-color:#f2f2f2;;
 }
@@ -403,7 +514,7 @@ textarea{
     position:relative;
     font-family: 'Arima Madurai', cursive;
     width:100px;
-    top:-400px;
+    top:-200px;
     left:800px;
 }
 
@@ -417,7 +528,7 @@ h3{
     
     position: relative;
     left:300px;
-    top:150px;
+    top:350px;
 }
 
 @media screen  and (min-width: 1200px) {
@@ -461,16 +572,24 @@ h3{
 }
 
 
+@media screen  and (max-width: 400px) {
+    .icon{
+        left:-335px;
+        top:-40px;
+    }
+    
+}
+
 </style>
     
     
 <script>
     
-   
     var bool = 0;
     //tneeds to be remove testing purpose only
     // $("#coolDiv").css("width","100%");
-
+    
+    
     
     $('#coolDiv').fadeIn(2000).removeClass('hidden');
     setTimeout(function(){ $(".coolDiv").show() }, 3000);
@@ -508,5 +627,14 @@ h3{
                                                      $("a").css("color","black");
                                                      
                                                      });
-    
-  </script>
+                                                     
+                                                     
+                                                     var heightimgthree = $("#imagethree").height()
+                                                     heightimgthree -= 100;
+                                                     $("#imagethree").height(heightimgthree)
+                                                     $("#imagetwo").height(heightimgthree)
+                                                     
+                                                     var heightimgfour = $("#imagefive").height()
+                                                     heightimgfour += 50;
+                                                     $("#imagefive").height(heightimgfour)
+    $("#imagefour").height(heightimgfour)  </script>
