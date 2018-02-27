@@ -701,10 +701,11 @@ imagetwooffset.top-=300
 
 
 $("#photogalary").click(function() {
-     $("#clickme").click();
+     
     $('html, body').animate({
         scrollTop: imagetwooffset.top
-    }, 1000);
+    }, 1500);
+     $("#clickme").click();
     return false;
 });
 
@@ -712,16 +713,18 @@ $("#about").click(function() {
      $("#clickme").click();
     $('html, body').animate({
         scrollTop: aboutoffset.top
-    }, 1000);
+    }, 1500);
+     $("#clickme").click();
     return false;
 });
 
 
 $("#service").click(function() {
-    $("#clickme").click()
+   
     $('html, body').animate({
         scrollTop: aboutoffset.top
-    }, 1000);
+    }, 1500);
+    $("#clickme").click()
     return false;
 });
     
