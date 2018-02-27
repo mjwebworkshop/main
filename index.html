@@ -683,4 +683,48 @@ var the_id = $(this).attr("href");
 
 return false;});
 
+    
+    
+var imagetwooffset = $("#imagetwo").offset();
+var aboutoffset = $("#aboutme").offset();
+
+
+//alert("top: " + offset.top+ "left: " + offset.left);
+
+var bodywidth = $(window).width()
+if(bodywidth<= 400){
+ aboutoffset.top-=300
+imagetwooffset.top-=300
+}
+
+
+
+
+$("#photogalary").click(function() {
+
+    $('html, body').animate({
+        scrollTop: imagetwooffset.top
+    }, 1000);
+    return false;
+});
+
+$("#about").click(function() {
+
+    $('html, body').animate({
+        scrollTop: aboutoffset.top
+    }, 1000);
+    return false;
+});
+
+
+$("#service").click(function() {
+
+    $('html, body').animate({
+        scrollTop: aboutoffset.top
+    }, 1000);
+    return false;
+});
+    
+    
+    
 </script>
