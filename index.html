@@ -26,23 +26,23 @@
                                 
                                 
                                 
-                                
-                                <div id="coolDiv" class="hidden">
-                                    <div id="kendi">KENDI</div>
-                                    <a href=
-                                        "" id="home">HOME</a>
-                                    <a href=
-                                        "" id="about">ABOUT</a>
-                                    <a href=
-                                        "" id="service">SERVICE</a>
-                                    <a href=
-                                        "" id="photogalary">PHOTO GALARY</a>
-                                    
-                                    <a href=
-                                        "" id="twitter">TWITTER</a>
-                                    <button id="booknow">BOOK NOW</button>
-                                </div>
-                                
+                            
+<div id="coolDiv" class="hidden">  
+  <div id="kendi">KENDI</div>
+  <a href=
+"#imageonediv" id="home">HOME</a>
+  <a href=
+"#paragraphone" id="about">ABOUT</a>
+  <a href=
+"#paragraphone" id="service">SERVICE</a>
+  <a href=
+"#image" id="photogalary">PHOTO GALARY</a>
+  
+  <a href=
+"https://twitter.com/" id="twitter" target="_blank">TWITTER</a>
+  <button id="booknow">BOOK NOW</button>
+</div>
+  
                                 
                                 
                                 <button class="hamburger hamburger--emphatic is-active" type="button" id="clickme">
@@ -671,4 +671,16 @@ h3{
                                                      var heightimgfour = $("#imagefive").height()
                                                      heightimgfour += 50;
                                                      $("#imagefive").height(heightimgfour)
-    $("#imagefour").height(heightimgfour)  </script>
+    $("#imagefour").height(heightimgfour) 
+    
+    $('a[href^="#"]').click(function(){
+
+var the_id = $(this).attr("href");
+
+    $('html, body').animate({
+        scrollTop:$(the_id).offset().top
+    }, 'slow');
+
+return false;});
+
+</script>
