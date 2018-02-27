@@ -702,32 +702,37 @@ if(bodywidth<= 400){
 
 
 $("#photogalary").click(function() {
-     
+     $("#coolDiv").hide();
     $('html, body').animate({
         scrollTop: imagetwooffset.top
     }, 1000);
     
      $("#clickme").click();
+    $("#coolDiv").show();
     return false;
 });
 
 $("#about").click(function() {
-     $("#clickme").click();
+    $("#coolDiv").hide();
+     
     $('html, body').animate({
         scrollTop: aboutoffset.top
     }, 1000);
      
      $("#clickme").click();
+    $("#coolDiv").show();
     return false;
 });
 
 
 $("#service").click(function() {
-   
+    $("#coolDiv").hide();
     $('html, body').animate({
         scrollTop: aboutoffset.top
     }, 1000);
+   
     $("#clickme").click()
+     $("#coolDiv").show();
     return false;
 });
     
