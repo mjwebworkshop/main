@@ -30,13 +30,13 @@
 <div id="coolDiv" class="hidden">  
   <div id="kendi">KENDI</div>
   <a href=
-"#" id="home">HOME</a>
+"#imageone" id="home">HOME</a>
   <a href=
-"#" id="about">ABOUT</a>
+"#aboutme" id="about">ABOUT</a>
   <a href=
-"#" id="service">SERVICE</a>
+"#aboutme" id="service">SERVICE</a>
   <a href=
-"#" id="photogalary">PHOTO GALARY</a>
+"#imagetwo" id="photogalary">PHOTO GALARY</a>
   
   <a href=
 "https://twitter.com/" id="twitter" target="_blank">TWITTER</a>
@@ -705,7 +705,8 @@ $("#photogalary").click(function() {
      
     $('html, body').animate({
         scrollTop: imagetwooffset.top
-    }, 1500);
+    }, 1000);
+    
      $("#clickme").click();
     return false;
 });
@@ -714,7 +715,8 @@ $("#about").click(function() {
      $("#clickme").click();
     $('html, body').animate({
         scrollTop: aboutoffset.top
-    }, 1500);
+    }, 1000);
+     
      $("#clickme").click();
     return false;
 });
@@ -724,7 +726,7 @@ $("#service").click(function() {
    
     $('html, body').animate({
         scrollTop: aboutoffset.top
-    }, 1500);
+    }, 1000);
     $("#clickme").click()
     return false;
 });
